@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Articulos</title>
+</head>
+<body>
+    <h1>Articulos del Blog</h1>
+    <ul>
+        {%for articulo in articulos  %}
+            <li>{{articulo.titulo}}-{{articulo.contenido}}</li>
+        {%empty%}
+            <li>No hay articulos disponibles</li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+</html>

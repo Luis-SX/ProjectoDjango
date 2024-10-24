@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Articulo(models.Model):
+class Articulo(models.Model):  #clase model hereda de Models
     titulo = models.CharField(max_length=100)
     contenido = models.TextField()
     fecha_publicacion = models.DateTimeField(auto_now_add=True)

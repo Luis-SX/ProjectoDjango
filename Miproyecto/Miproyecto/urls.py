@@ -22,6 +22,8 @@ from . import views #importar la vista del proyecto
 urlpatterns = [
     path('admin/', admin.site.urls), #ruta para la administracion
     path('blog/', include('blog.urls')), #indica la urls de la aplicacion blog
-    path('', views.index, name='index'), #indica la url del index del proyecto
-    path('galeria/', include('galeria.urls')) #indica la url de la app galería
+    path('', views.index, name='index'), #indica la url del index del proyecto, vacio porque es la raiz
+###    path('galeria/', include('galeria.urls')) #indica la url de la app galería
+
+  
 ]
